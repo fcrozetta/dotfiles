@@ -1,5 +1,8 @@
+#!/bin/bash
 if [[ $(uname) == "Darwin" ]]; then
-    echo "IT's a me, mac"
+    echo "It's a me, mac"
 
+    # Install homebrew if not installed
     zsh homebrew.sh
+
 fi
