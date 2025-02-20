@@ -1,0 +1,15 @@
+#!/bin/zsh
+ 
+OP=$1
+BRANCH=$2
+PROJ=$(basename $(pwd))
+ 
+if [[ "$OP" == "add" ]]; then
+#   git worktree add ../${PROJ}.${BRANCH}  ${BRANCH}
+    git worktree add ../${PROJ}.${BRANCH} -b ${BRANCH}
+    cd ../${PROJ}.${BRANCH}
+    $SHELL
+    git branch --set-upstream origin ${BRANCH}
+elif [[ "$OP" == "remove" ]]; then
+    git worktree remove ../${PROJ}.${BRANCH}
+fi
