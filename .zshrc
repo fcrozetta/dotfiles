@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias activate='eval $(poetry env activate)'
 
 # Remove user@host from PS1
 prompt_context() {}
