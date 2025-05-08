@@ -18,6 +18,14 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 
+brew install ripgrep
+brew install fzf
+brew install bat
+brew install vim
+
+# Need to get used to this
+brew install --cask ghostty
+
 # pyenv
 brew install pyenv
 
