@@ -26,9 +26,5 @@ brew install vim
 # Need to get used to this
 brew install --cask ghostty
 
-# pyenv
-brew install pyenv
-
-#! Remember to update this
-pyenv install 3.12.2
-pyenv global 3.12.2
+# uv - python versions will be installed as needed
+brew install uv
