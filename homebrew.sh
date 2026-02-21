@@ -18,10 +18,16 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 
+brew install lazygit
+brew install fzf
+brew install fdfind
 brew install ripgrep
+brew install ast-grep
 brew install fzf
 brew install bat
-brew install vim
+brew install neovim
+brew install lua
+brew install luarocks
 
 # Need to get used to this
 brew install --cask ghostty
